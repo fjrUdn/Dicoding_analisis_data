@@ -158,7 +158,7 @@ if __name__ == "__main__":
 
     st.header("Bike Sharing Dashboard :bike:")
 
-    main_df = pd.read_csv('Data/day_clean.csv')
+    main_df = pd.read_csv('dashboard/day_clean.csv')
 
     datetime_columns = ["dteday"]
     main_df.sort_values(by="dteday", inplace=True)
@@ -172,7 +172,7 @@ if __name__ == "__main__":
     
     with st.sidebar:
         # Menambahkan logo perusahaan
-        st.image("logo.jpg")
+        st.image("dashboard/logo.jpg")
 
         # Mengambil start_date & end_date dari date_input
         start_date, end_date = st.date_input(
