@@ -193,3 +193,7 @@ if __name__ == "__main__":
     year(main_df_filter)
     month(df_month)
 
+    year_copyright = datetime.date.today().year
+    copyright = "Copyright © " + str(year_copyright) + " | Bike Sharing Dashboard | All Rights Reserved | " + "Made with :heart: by [@fjrudn](https://www.linkedin.com/in/fajar-kamaludin-akhmad-0b1908201/)"
+    st.caption(copyright)
+
