@@ -158,7 +158,7 @@ if __name__ == "__main__":
 
     st.header("Bike Sharing Dashboard :bike:")
 
-    main_df = pd.read_csv('day_clean.csv')
+    main_df = pd.read_csv('Data/day_clean.csv')
 
     datetime_columns = ["dteday"]
     main_df.sort_values(by="dteday", inplace=True)
